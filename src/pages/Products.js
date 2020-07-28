@@ -6,7 +6,7 @@ const Products = () => {
 
   const { products, addProductToCart } = shopContext;
 
-  if (!products) {
+  if (products.length === 0) {
     return (
       <section className='products-section'>
         <h1>No Products</h1>
