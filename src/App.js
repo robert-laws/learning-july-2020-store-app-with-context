@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Products from './pages/Products';
 import Cart from './pages/Cart';
+import About from './pages/About';
 
 import './App.scss';
 
@@ -17,6 +18,7 @@ function App() {
           <Switch>
             <Route exact path='/' component={Products} />
             <Route exact path='/cart' component={Cart} />
+            <Route exact path='/about' component={About} />
           </Switch>
         </Router>
       </main>

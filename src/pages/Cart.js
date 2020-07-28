@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Cart = () => {
-  return <div>cart...</div>;
+  return <section className='cart-section'>Cart...</section>;
 };
 
 export default Cart;
