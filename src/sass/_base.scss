@@ -46,6 +46,54 @@
   main {
     flex: 1;
     border: 1px solid #ccc;
+
+    section.products-section {
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+
+      ul {
+        list-style: none;
+
+        li {
+          display: flex;
+          align-items: center;
+          width: 500px;
+          height: 40px;
+          margin: 10px 0;
+          padding: 5px 10px;
+          border: 1px solid #ddd;
+          background-color: lighten(lightgrey, 16%);
+
+          .product-info {
+            flex: 1;
+          }
+
+          .product-action {
+            flex: 0 1 90px;
+
+            button {
+              border: none;
+              border-radius: 4px;
+              padding: 10px;
+              margin: 0;
+              text-decoration: none;
+              background: #0069ed;
+              color: #ffffff;
+              font-family: sans-serif;
+              cursor: pointer;
+              text-align: center;
+              transition: all 150ms ease-in;
+
+              &:hover,
+              &:focus {
+                background: #0053ba;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 
   footer {
