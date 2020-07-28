@@ -12,17 +12,17 @@ import './App.scss';
 function App() {
   return (
     <div className='App'>
-      <Header />
-      <main>
-        <Router>
+      <Router>
+        <Header />
+        <main>
           <Switch>
             <Route exact path='/' component={Products} />
             <Route exact path='/cart' component={Cart} />
             <Route exact path='/about' component={About} />
           </Switch>
-        </Router>
-      </main>
-      <Footer />
+        </main>
+        <Footer />
+      </Router>
     </div>
   );
 }
