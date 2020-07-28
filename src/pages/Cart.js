@@ -27,7 +27,8 @@ const Cart = () => {
         {cart.map((product) => (
           <li key={product.id}>
             <div className='cart-info'>
-              <strong>{product.title}</strong> - ${product.price}
+              <strong>{product.title}</strong> - Quantity: {product.quantity} -
+              Total Price: ${(product.price * product.quantity).toFixed(2)}
             </div>
             <div className='cart-action'>
               <button onClick={() => removeProductFromCart(product.id)}>
